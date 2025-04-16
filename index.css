@@ -1,0 +1,151 @@
+/* index.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d0d0d;
+  color: #fff;
+  line-height: 1.6;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #97979e;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation styles */
+.nav, .user-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav a, .user-nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: capitalize;
+  transition: color 0.3s;
+}
+
+.nav a:hover, .user-nav a:hover {
+  color: #00bcd4;
+}
+
+
+.services-section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.services-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #00ffe1;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.service-card {
+  flex: 1 1 calc(33.333% - 20px);
+  background-color: #1a1a1a;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 255, 225, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-card img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+
+.service-card h3 {
+  margin: 20px;
+  color: #00ffe1;
+}
+
+.service-card p {
+  margin: 0 20px 20px;
+}
+
+/* Section Dividers */
+.section-divider {
+  font-size: 1.8rem;
+  margin: 40px 0 20px;
+  color: #00ffe1;
+  border-left: 5px solid #00ffe1;
+  padding-left: 15px;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background-color: #1a1a1a;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 255, 225, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  color: #00ffe1;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-section h2 {
+    font-size: 2.2rem;
+  }
+
+  .section-divider {
+    font-size: 1.5rem;
+  }
+}
